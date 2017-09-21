@@ -52,15 +52,16 @@
 //                [objDateformat setDateFormat:@"yyyy-MM-dd "];
 //                NSString * timeStr = [NSString stringWithFormat:@"%@",[objDateformat stringFromDate: date]] ;
 //                
-//                //NSLog(@"-----%@",timeStr) ;
-//                
-//                
+
+//    NSArray* cellData = @[timeStr,model.mobile?model.mobile:@"",model.invite_code?model.invite_code:@"",model.id_number?model.id_number:@""];
+//    [contentDataArray addObject:cellData];
+//
 //                NSArray* cellData = @[timeStr,model.mobile,model.invite_code,model.id_number];
 //                [contentDataArray addObject:cellData];
 //            }
 //        } else {
 //            [self.receiveArray addObjectsFromArray:obj];
-//            便利数组取不通的数据
+//            便利数组取不到的数据
 //            for (InvitRrecordsModel *model in obj) {
 //                
 //                [nameArray addObject:model.name];
@@ -78,8 +79,8 @@
 //                
 //                
 //                
-//                NSArray* cellData = @[timeStr,model.mobile,model.invite_code,model.id_number];
-//                [contentDataArray addObject:cellData];
+//                NSArray* cellData = @[timeStr,model.mobile?model.mobile:@"",model.invite_code?model.invite_code:@"",model.id_number?model.id_number:@""];
+//       [contentDataArray addObject:cellData];
 //            }
 //        }
 //        
